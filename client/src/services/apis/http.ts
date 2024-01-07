@@ -1,9 +1,9 @@
 import axios, { AxiosInstance } from 'axios'
 
-// Factory for creating an axios instance per given
+// Function for creating an axios instance per given
 // base url. This will allow us to create multiple
 // instances for different clients.
-const httpFactory = (baseURL: string): AxiosInstance => {
+const httpCreator = (baseURL: string): AxiosInstance => {
   const http = axios.create({ baseURL })
 
   // Wiring up an axios interceptor to be able to handle errors globally
@@ -25,4 +25,4 @@ const httpFactory = (baseURL: string): AxiosInstance => {
   return http
 }
 
-export default httpFactory
+export default httpCreator

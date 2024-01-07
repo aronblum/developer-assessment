@@ -1,8 +1,8 @@
 import { type TodoRequest, type Todo, TodoResponseSchema, TodosResponseSchema } from '@models/todo'
-import httpFactory from '@services/apis/http.ts'
+import httpCreator from '@services/apis/http.ts'
 import parseResponse from '@utils/parseResponse.ts'
 
-const http = httpFactory(import.meta.env.VITE_TODO_API_BASE_URL)
+const http = httpCreator(import.meta.env.VITE_TODO_API_BASE_URL)
 const todosBaseUrlPart = '/v1/todos'
 
 // Creating a facade to abstract away axios concerns
