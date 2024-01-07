@@ -22,7 +22,7 @@ The Front End is built using [React](https://react.dev/) and [TypeScript](https:
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps:
+To get a local copy up and running follow these steps:
 
 ### Setup
 
